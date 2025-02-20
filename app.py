@@ -103,7 +103,7 @@ if st.button("Diabetes Test Result"):
 st.subheader("Prediction Result:")
 st.write(diab_diagnosis)
 if st.button('show Model Accuracy'):
-    test_data=pd.read_csv(r"C:\Users\pavan\OneDrive\Desktop\DiabetesPrediction\diabetes.csv")
+    test_data=pd.read_csv("disbetes.csv")
     x_test=test_data.drop(columns=['Outcome'])
     y_test=test_data['Outcome']
 
